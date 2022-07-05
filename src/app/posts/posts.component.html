@@ -1,0 +1,9 @@
+<button (click)="getPosts()">Print Posts</button>
+<div *ngFor="let post of posts">
+  <h2>
+    {{post.title | uppercase}}
+  </h2>
+  <p>
+      {{post.body | shorten}}
+  </p>
+</div>
